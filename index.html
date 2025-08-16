@@ -1,0 +1,256 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>COIN</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/img/COIN.jpg" rel="icon">
+  <link href="static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/vendor/aos/aos.css" rel="stylesheet">
+  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/css/style.css" rel="stylesheet">
+
+  <style>
+    /* 关键修改：使用 aspect-ratio 替代固定高度，以确保所有图片保持一致的宽高比 */
+    .carousel-img {
+      aspect-ratio: 16 / 9; /* 你可以根据需要把 16/9 改成 4/3、1/1 等任意宽高比 */
+      width: 100%;
+      object-fit: cover;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto" style="display: flex; align-items: center;">
+        <a href="index.html" style="color: rgb(32, 120, 221); font-weight: bold; font-size: 35px; display: flex; align-items: center; text-decoration: none;">
+          <img src="static/img/coin-small.png" alt="Logo" style="height: 40px; margin-right: 10px;">
+          COIN
+        </a>
+      </h1>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a style="color: rgb(32, 120, 221); font-weight: bold; font-size: 23px;" class="nav-link scrollto" href="index.html">Home</a></li>
+          <li><a style="color: rgb(32, 120, 221); font-weight: bold; font-size: 23px;" class="nav-link scrollto" href="news.html">News</a></li>
+          <li><a style="color: rgb(32, 120, 221); font-weight: bold; font-size: 23px;" class="nav-link scrollto active" href="members.html">Members</a></li>
+          <li><a style="color: rgb(32, 120, 221); font-weight: bold; font-size: 23px;" class="nav-link scrollto" href="publication.html">Publication</a></li>
+          <li><a style="color: rgb(32, 120, 221); font-weight: bold; font-size: 23px;" class="nav-link scrollto" href="project.html">Project</a></li>
+          <li><a style="color: rgb(32, 120, 221); font-weight: bold; font-size: 23px;" class="nav-link scrollto" href="resources.html">Resources</a></li>
+          <li><a style="color: rgb(32, 120, 221); font-weight: bold; font-size: 23px;" class="nav-link scrollto" href="graduate.html">Graduate</a></li>
+          <li><a style="color: rgb(32, 120, 221); font-weight: bold; font-size: 23px;" class="nav-link scrollto" href="join.html">Join Us</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+<!--  <section id="hero" class="d-flex align-items-center">-->
+  <section id="hero" class="d-flex align-items-center"
+         style="background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
+                url('static/img/background.png') center center/cover;
+                position: relative;
+                padding: 120px 0;
+">
+    <div class="container">
+      <div class="row">
+          <img src="static/img/seu.svg" class="img-fluid" style="max-width: 100px; height: 75px;">
+           <img src="static/img/coin-small.png" class="img-fluid" style="max-width: 100px; height: 75px;">
+
+        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
+             data-aos="fade-up" data-aos-delay="200">
+          <h1 style="white-space: nowrap; color: #ffffff;">认知智能研究所</h1>
+          <h1 style="white-space: nowrap; color: #ffffff;">Institute of Cognitive Intelligence</h1>
+        </div>
+
+<!--        <div class="col-lg-6 order-1 order-lg-2 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="200">-->
+<!--          <div style="-->
+<!--            max-width: 500px;-->
+<!--            margin-left: auto;-->
+<!--            padding-left: 40px;-->
+<!--            color: #34495e;-->
+<!--            font-size: 22px;-->
+<!--            font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;-->
+<!--            line-height: 1.9;-->
+<!--            text-align: justify;-->
+<!--            font-weight: bold;-->
+<!--          ">-->
+<!--            <p style="margin-bottom: 1.2em;">-->
+<!--              东南大学认知智能研究所（COIN）是新一代人工智能技术与交叉应用教育部重点实验室的核心团队之一，由漆桂林教授担任所长，长期从事大规模知识图谱构建、推理、检索等方面的研究，拥有优良的网络条件和科研环境。-->
+<!--            </p>-->
+<!--            <p style="margin-bottom: 1.2em; text-indent: 2em;">-->
+<!--              团队成员主持或参与了多项国家级科研项目，包括1项国家自然科学基金重点项目、1项重点研发项目和1项国家863计划项目。-->
+<!--            </p>-->
+<!--            <p style="margin-bottom: 1.2em; text-indent: 2em;">-->
+<!--              课题组与国内外建立了广泛的合作关系，参与了与斯坦福大学、卡尔斯鲁厄大学联合开展的欧盟第七框架国际合作研究项目，并与澳大利亚莫纳什大学联合培养博士生。-->
+<!--            </p>-->
+<!--          </div>-->
+<!--        </div>-->
+
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+  <!-- Vendor JS Files -->
+  <script src="static/vendor/aos/aos.js"></script>
+  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="static/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="static/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="static/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="static/js/main.js"></script>
+
+  <!-- 研究所活动轮播图 -->
+  <section id="carousel" class="py-5 bg-light">
+    <div class="container" data-aos="fade-up">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <!-- 图片1 -->
+          <div class="swiper-slide">
+            <img src="static/img/event/event_1.jpg" alt="活动图1" class="img-fluid rounded shadow carousel-img">
+          </div>
+          <!-- 图片2 -->
+          <div class="swiper-slide">
+            <img src="static/img/event/event_3.jpg" alt="活动图3" class="img-fluid rounded shadow carousel-img">
+          </div>
+          <!-- 图片3 -->
+          <div class="swiper-slide">
+            <img src="static/img/event/event_4.jpg" alt="活动图4" class="img-fluid rounded shadow carousel-img">
+          </div>
+          <div class="swiper-slide">
+            <img src="static/img/event/event_5.jpg" alt="活动图5" class="img-fluid rounded shadow carousel-img">
+          </div>
+          <div class="swiper-slide">
+            <img src="static/img/event/event_6.jpg" alt="活动图6" class="img-fluid rounded shadow carousel-img">
+          </div>
+          <div class="swiper-slide">
+            <img src="static/img/event/event_7.jpg" alt="活动图7" class="img-fluid rounded shadow carousel-img">
+          </div>
+          <div class="swiper-slide">
+            <img src="static/img/event/event_8.jpg" alt="活动图8" class="img-fluid rounded shadow carousel-img">
+          </div>
+          <div class="swiper-slide">
+            <img src="static/img/event/event_9.jpg" alt="活动图9" class="img-fluid rounded shadow carousel-img">
+          </div>
+          <div class="swiper-slide">
+            <img src="static/img/event/event_10.jpg" alt="活动图10" class="img-fluid rounded shadow carousel-img">
+          </div>
+          <div class="swiper-slide">
+            <img src="static/img/event/event_11.jpg" alt="活动图11" class="img-fluid rounded shadow carousel-img">
+          </div>
+          <div class="swiper-slide">
+            <img src="static/img/event/event_12.jpg" alt="活动图12" class="img-fluid rounded shadow carousel-img">
+          </div>
+          <div class="swiper-slide">
+            <img src="static/img/event/event_13.jpg" alt="活动图13" class="img-fluid rounded shadow carousel-img">
+          </div>
+          <div class="swiper-slide">
+            <img src="static/img/event/event_14.jpg" alt="活动图14" class="img-fluid rounded shadow carousel-img">
+          </div>
+          <!-- 可以根据需要继续添加更多图片 -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Swiper 初始化脚本 -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      slidesPerView: 1,
+      spaceBetween: 20,
+      breakpoints: {
+        576: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 3,
+        },
+      },
+    });
+  </script>
+
+
+<!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>About Us</h2>
+    </div>
+
+    <div class="row content">
+      <div class="col-lg-10">
+<!--        <p>-->
+<!--          本机构隶属于东南大学（Southeast University），成立于2010年，致力于人工智能与知识科学方向的前沿研究。-->
+<!--        </p>-->
+        <ul>
+          <li style="font-weight: bold;"><i class="ri-check-double-line"></i> 东南大学认知智能研究所（Institute of Cognitive Intelligence, Southeast University）是新一代人工智能技术与交叉应用教育部重点实验室的核心团队之一，由漆桂林教授担任所长，长期从事人工智能与大规模知识图谱构建、检索、推理等方面的研究。团队成员超过50人，均由东南大学专任教师与研究生组成。</li>
+          <li style="font-weight: bold;"><i class="ri-check-double-line"></i> 我们与国内外知名高校和企业建立了长期而紧密的合作关系。在高校方面，合作伙伴包括浙江大学、同济大学、莫纳什大学、爱丁堡大学等；在企业方面，则与阿里巴巴、蚂蚁科技、腾讯、字节跳动、国家电网、中国移动等展开了深入的科研项目合作。</li>
+        </ul>
+      </div>
+      <div class="col-lg-2 pt-4 pt-lg-0">
+<!--        <p>-->
+<!--          实验室致力于营造一个开放、合作、包容的科研环境，共同努力探索科技前沿。-->
+<!--        </p>-->
+            <img src="static/img/seucoin.png" class="img-fluid" style="max-width: 100px; height: 100px;">
+<!--            <img src="static/img/seucoin.png" class="img-fluid" style="max-width: 200px; height: 200px;">-->
+
+        <p>
+          <br><strong> GitHub: </strong> <a href="https://github.com/SEU-COIN">SEU-COIN</a>
+        </p>
+<!--        <p>-->
+<!--          友情链接: <a href="http://openkg.cn/en/">http://openkg.cn/en/</a>-->
+<!--        </p>-->
+<!--        <a href="#contact" class="btn-learn-more">了解更多</a>-->
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="text-center py-4 bg-light">
+    <div class="container">
+      <p class="mb-0", style="font-weight: bold">&copy; 2025 COIN Lab. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
