@@ -35,6 +35,13 @@ function loadHeader() {
             <i class="bi bi-list mobile-nav-toggle"></i>
           </nav><!-- .navbar -->
 
+          <!-- GitHub Icon -->
+          <div class="github-icon" style="margin-left: 27px;">
+            <a href="https://github.com/SEU-COIN" style="display: flex; align-items: center;">
+              <img src="static/img/${isIndexPage ? 'github-mark-white.svg' : 'github-mark.svg'}" alt="GitHub" style="height: 24px; width: 24px;">
+            </a>  
+          </div>
+
         </div>
       </header><!-- End Header -->
     `;
