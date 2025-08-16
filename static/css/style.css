@@ -106,11 +106,27 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+/* Header */
 #header {
   background: white;
   transition: all 0.5s;
   z-index: 997;
-  padding: 15px 0;
+  padding: 6px 0;               /* 上下padding缩小 */
+}
+
+#header .logo img {
+  height: 32px;                 /* logo 缩小 */
+}
+
+#navbar ul li a {
+  font-size: 20px;              /* 导航文字缩小 */
+}
+
+/* Carousel Images */
+.carousel-img {
+  width: 100%;
+  aspect-ratio: 16 / 9;         /* 自适应宽高比 */
+  object-fit: cover;
 }
 #header.header-scrolled, #header.header-inner-pages {
   /*background: #bfe2e9;*/
