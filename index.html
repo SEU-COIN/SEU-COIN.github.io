@@ -35,6 +35,26 @@
       width: 100%;
       object-fit: cover;
     }
+
+  /* 默认隐藏放大按钮 */
+  .view-original-btn {
+    display: none;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 6px;
+    border-radius: 4px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+
+  /* 当鼠标悬浮在图片所在的 swiper-slide 上时显示按钮 */
+  .swiper-slide:hover .view-original-btn {
+    display: block;
+  }
   </style>
 
 </head>
@@ -137,47 +157,175 @@
     <div class="container" data-aos="fade-up">
       <div class="swiper-container">
         <div class="swiper-wrapper">
-          <!-- 图片1 -->
-          <div class="swiper-slide">
-            <img src="static/img/event/event_1.webp" alt="活动图1" class="img-fluid rounded shadow carousel-img">
+          <div class="swiper-slide position-relative">
+            <img src="static/img/event/event_1.webp"
+                alt="活动图1"
+                class="img-fluid rounded shadow carousel-img">
+            <a href="static/img/event/raw/event_1.jpg"
+              target="_blank"
+              class="view-original-btn">
+              <i class="bi bi-arrows-fullscreen"></i>
+            </a>
           </div>
-          <!-- 图片2 -->
-          <div class="swiper-slide">
-            <img src="static/img/event/event_3.webp" alt="活动图3" class="img-fluid rounded shadow carousel-img">
+          <!-- <div class="swiper-slide position-relative">
+            <img src="static/img/event/event_2.webp"
+                alt="活动图2"
+                class="img-fluid rounded shadow carousel-img">
+            <a href="static/img/event/raw/event_2.jpg"
+              target="_blank"
+              class="view-original-btn">
+              <i class="bi bi-arrows-fullscreen"></i>
+            </a>
+          </div> -->
+          <div class="swiper-slide position-relative">
+            <img src="static/img/event/event_3.webp"
+                alt="活动图3"
+                class="img-fluid rounded shadow carousel-img">
+            <a href="static/img/event/raw/event_3.jpg"
+              target="_blank"
+              class="view-original-btn">
+              <i class="bi bi-arrows-fullscreen"></i>
+            </a>
           </div>
-          <!-- 图片3 -->
-          <div class="swiper-slide">
-            <img src="static/img/event/event_4.webp" alt="活动图4" class="img-fluid rounded shadow carousel-img">
+          <div class="swiper-slide position-relative">
+            <img src="static/img/event/event_4.webp"
+                alt="活动图4"
+                class="img-fluid rounded shadow carousel-img">
+            <a href="static/img/event/raw/event_4.jpg"
+              target="_blank"
+              class="view-original-btn">
+              <i class="bi bi-arrows-fullscreen"></i>
+            </a>
           </div>
-          <div class="swiper-slide">
-            <img src="static/img/event/event_5.webp" alt="活动图5" class="img-fluid rounded shadow carousel-img">
+          <div class="swiper-slide position-relative">
+            <img src="static/img/event/event_5.webp"
+                alt="活动图5"
+                class="img-fluid rounded shadow carousel-img">
+            <a href="static/img/event/raw/event_5.jpg"
+              target="_blank"
+              class="view-original-btn">
+              <i class="bi bi-arrows-fullscreen"></i>
+            </a>
           </div>
-          <div class="swiper-slide">
-            <img src="static/img/event/event_6.webp" alt="活动图6" class="img-fluid rounded shadow carousel-img">
+          <div class="swiper-slide position-relative">
+            <img src="static/img/event/event_6.webp"
+                alt="活动图6"
+                class="img-fluid rounded shadow carousel-img">
+            <a href="static/img/event/raw/event_6.jpg"
+              target="_blank"
+              class="view-original-btn">
+              <i class="bi bi-arrows-fullscreen"></i>
+            </a>
           </div>
-          <div class="swiper-slide">
-            <img src="static/img/event/event_7.webp" alt="活动图7" class="img-fluid rounded shadow carousel-img">
+          <div class="swiper-slide position-relative">
+            <img src="static/img/event/event_7.webp"
+                alt="活动图7"
+                class="img-fluid rounded shadow carousel-img">
+            <a href="static/img/event/raw/event_7.jpg"
+              target="_blank"
+              class="view-original-btn">
+              <i class="bi bi-arrows-fullscreen"></i>
+            </a>
           </div>
-          <div class="swiper-slide">
-            <img src="static/img/event/event_8.webp" alt="活动图8" class="img-fluid rounded shadow carousel-img">
+          <div class="swiper-slide position-relative">
+            <img src="static/img/event/event_8.webp"
+                alt="活动图8"
+                class="img-fluid rounded shadow carousel-img">
+            <a href="static/img/event/raw/event_8.jpg"
+              target="_blank"
+              class="view-original-btn">
+              <i class="bi bi-arrows-fullscreen"></i>
+            </a>
           </div>
-          <div class="swiper-slide">
-            <img src="static/img/event/event_9.webp" alt="活动图9" class="img-fluid rounded shadow carousel-img">
+          <div class="swiper-slide position-relative">
+            <img src="static/img/event/event_9.webp"
+                alt="活动图9"
+                class="img-fluid rounded shadow carousel-img">
+            <a href="static/img/event/raw/event_9.jpg"
+              target="_blank"
+              class="view-original-btn">
+              <i class="bi bi-arrows-fullscreen"></i>
+            </a>
           </div>
-          <div class="swiper-slide">
-            <img src="static/img/event/event_10.webp" alt="活动图10" class="img-fluid rounded shadow carousel-img">
+          <div class="swiper-slide position-relative">
+            <img src="static/img/event/event_10.webp"
+                alt="活动图10"
+                class="img-fluid rounded shadow carousel-img">
+            <a href="static/img/event/raw/event_10.jpg"
+              target="_blank"
+              class="view-original-btn">
+              <i class="bi bi-arrows-fullscreen"></i>
+            </a>
           </div>
-          <div class="swiper-slide">
-            <img src="static/img/event/event_11.webp" alt="活动图11" class="img-fluid rounded shadow carousel-img">
+          <div class="swiper-slide position-relative">
+            <img src="static/img/event/event_11.webp"
+                alt="活动图11"
+                class="img-fluid rounded shadow carousel-img">
+            <a href="static/img/event/raw/event_11.jpg"
+              target="_blank"
+              class="view-original-btn">
+              <i class="bi bi-arrows-fullscreen"></i>
+            </a>
           </div>
-          <div class="swiper-slide">
-            <img src="static/img/event/event_12.webp" alt="活动图12" class="img-fluid rounded shadow carousel-img">
+          <div class="swiper-slide position-relative">
+            <img src="static/img/event/event_12.webp"
+                alt="活动图12"
+                class="img-fluid rounded shadow carousel-img">
+            <a href="static/img/event/raw/event_12.jpg"
+              target="_blank"
+              class="view-original-btn">
+              <i class="bi bi-arrows-fullscreen"></i>
+            </a>
           </div>
-          <div class="swiper-slide">
-            <img src="static/img/event/event_13.webp" alt="活动图13" class="img-fluid rounded shadow carousel-img">
+          <div class="swiper-slide position-relative">
+            <img src="static/img/event/event_13.webp"
+                alt="活动图13"
+                class="img-fluid rounded shadow carousel-img">
+            <a href="static/img/event/raw/event_13.jpg"
+              target="_blank"
+              class="view-original-btn">
+              <i class="bi bi-arrows-fullscreen"></i>
+            </a>
           </div>
-          <div class="swiper-slide">
-            <img src="static/img/event/event_14.webp" alt="活动图14" class="img-fluid rounded shadow carousel-img">
+          <div class="swiper-slide position-relative">
+            <img src="static/img/event/event_14.webp"
+                alt="活动图14"
+                class="img-fluid rounded shadow carousel-img">
+            <a href="static/img/event/raw/event_14.jpg"
+              target="_blank"
+              class="view-original-btn">
+              <i class="bi bi-arrows-fullscreen"></i>
+            </a>
+          </div>
+          <!-- <div class="swiper-slide position-relative">
+            <img src="static/img/event/event_15.webp"
+                alt="活动图15"
+                class="img-fluid rounded shadow carousel-img">
+            <a href="static/img/event/raw/event_15.jpg"
+              target="_blank"
+              class="view-original-btn">
+              <i class="bi bi-arrows-fullscreen"></i>
+            </a>
+          </div> -->
+          <!-- <div class="swiper-slide position-relative">
+            <img src="static/img/event/event_16.webp"
+                alt="活动图16"
+                class="img-fluid rounded shadow carousel-img">
+            <a href="static/img/event/raw/event_16.jpg"
+              target="_blank"
+              class="view-original-btn">
+              <i class="bi bi-arrows-fullscreen"></i>
+            </a>
+          </div> -->
+          <div class="swiper-slide position-relative">
+            <img src="static/img/event/event_17.webp"
+                alt="活动图17"
+                class="img-fluid rounded shadow carousel-img">
+            <a href="static/img/event/raw/event_17.jpg"
+              target="_blank"
+              class="view-original-btn">
+              <i class="bi bi-arrows-fullscreen"></i>
+            </a>
           </div>
           <!-- 可以根据需要继续添加更多图片 -->
         </div>
