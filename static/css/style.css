@@ -571,6 +571,12 @@ h1, h2, h3, h4, h5, h6 {
   color: #47b2e4;
 }
 
+.sidebar-menu a:focus,
+.sidebar-menu a:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
 /* Responsive adjustments */
 @media (max-width: 480px) {
   .sidebar-menu {
@@ -2054,17 +2060,40 @@ html, body, .container, .container-fluid {
 }
 
 .team .member.member--faculty .pic{ --avatar-size: 180px; }
-@media (max-width: 768px) {
-  .team .member.member--faculty .pic {
-    --avatar-size: 120px;
-  }
-}
 
-.team .member.member--student {
-  display: flex;
-  align-items: center;    /* 文字与头像垂直居中 */
-  padding: 30px;          /* 保持简洁 */
-  max-height: 300px;      /* 限制学生卡片整体高度 */
+/* 移动端：≤768px 时更紧凑 */
+@media (max-width: 768px) {
+  .team .member.member--faculty {
+    padding: 30px;            /* 整体 padding 缩小 */
+    align-items: center;      /* 头像和文字垂直居中 */
+  }
+
+  .team .member.member--faculty .pic {
+    --avatar-size: 120px;     /* 头像缩小 */
+  }
+
+  .team .member.member--faculty .member-info {
+    padding-left: 15px;       /* 减小左右间距 */
+  }
+
+  .team .member.member--faculty h4 {
+    font-size: 18px;          /* 标题缩小 */
+    margin-bottom: 3px;
+  }
+
+  .team .member.member--faculty span {
+    font-size: 13px;
+    padding-bottom: 6px;
+  }
+
+  .team .member.member--faculty p {
+    font-size: 13px;
+    margin: 4px 0 0 0;        /* 收紧段落间距 */
+  }
+
+  .team .member.member--faculty .social {
+    margin-top: 6px;          /* 社交按钮区域收紧 */
+  }
 }
 
 
