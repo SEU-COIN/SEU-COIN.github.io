@@ -1855,3 +1855,78 @@ section {
     padding-top: 4px;
   }
 }
+
+/* 移动端 hero 优化 */
+@media (max-width: 575.98px) {
+  #hero {
+    height: auto !important;
+    min-height: unset !important;
+    padding: 20px 12px 16px !important;  /* 减少顶部内边距，让文字更靠上 */
+    background-position: center top !important;
+    background-size: cover !important;
+  }
+
+  /* 隐藏两个 logo 图标 */
+  #hero img {
+    display: none !important;
+  }
+
+  /* 排版靠左 */
+  #hero .d-flex {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 6px !important;
+    text-align: left !important;
+  }
+
+  /* 标题稍大 */
+  #hero h1 {
+    white-space: normal !important;
+    font-size: 22px !important;   /* 稍大一些 */
+    line-height: 1.25 !important;
+    margin: 0 !important;
+  }
+
+  #hero h1 span {
+    -webkit-text-stroke: 0.25px #ffffff !important;
+  }
+}
+
+/* 平板尺寸下 */
+@media (min-width: 576px) and (max-width: 768px) {
+  #hero {
+    height: auto !important;
+    padding: 56px 16px 20px !important;
+  }
+  #hero img { display: none !important; }
+  #hero .d-flex { align-items: flex-start !important; text-align: left !important; }
+  #hero h1 { font-size: 26px !important; }
+}
+
+/* JOIN-US 大图通用：充满容器宽度，不裁剪 */
+.join-hero img {
+  width: 100% !important;
+  height: auto !important;
+  max-width: none !important;     /* 不再被 800px 限制 */
+  display: block;
+  object-fit: contain;            /* 明确不裁剪 */
+}
+
+/* 防止父容器裁切（有模板会在 section title 上设 overflow） */
+.section-title,
+.join-hero {
+  overflow: visible !important;
+}
+
+/* 移动端微调边距，确保更贴近正文 */
+@media (max-width: 575.98px) {
+  .join-hero {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+}
+
+/* 如出现横向滚动条，可加这一条兜底 */
+html, body, .container, .container-fluid {
+  overflow-x: hidden;
+}
