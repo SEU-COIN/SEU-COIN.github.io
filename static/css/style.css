@@ -2027,6 +2027,18 @@ html, body, .container, .container-fluid {
 }
 
 .team .member.member--faculty .pic{ --avatar-size: 180px; }
+@media (max-width: 768px) {
+  .team .member.member--faculty .pic {
+    --avatar-size: 120px;
+  }
+}
+
+.team .member.member--student {
+  display: flex;
+  align-items: center;    /* 文字与头像垂直居中 */
+  padding: 30px;          /* 保持简洁 */
+  max-height: 300px;      /* 限制学生卡片整体高度 */
+}
 
 
 .team .member.member--student {
