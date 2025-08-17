@@ -272,6 +272,10 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
   line-height: 0;
   transition: 0.5s;
+  /* 添加调试样式 */
+  background: rgba(255, 0, 0, 0.1);
+  padding: 5px;
+  border-radius: 3px;
 }
 .mobile-nav-toggle.bi-x {
   color: #fff;

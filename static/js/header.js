@@ -49,6 +49,9 @@ function loadHeader() {
     // Set active nav item based on current page
     window.scrollTo(0, 0);
     setActiveNavItem();
+    
+    // 绑定移动端导航事件
+    bindMobileNavEvents();
   }
 }
 
@@ -61,6 +64,77 @@ function setActiveNavItem() {
     if (link.getAttribute('href') === currentPage) {
       link.classList.add('active');
     }
+  });
+}
+
+// 绑定移动端导航事件
+function bindMobileNavEvents() {
+  console.log('Binding mobile nav events...');
+  
+  // 移动端导航切换
+  const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+  console.log('Mobile nav toggle element:', mobileNavToggle);
+  
+  if (mobileNavToggle) {
+    mobileNavToggle.addEventListener('click', function(e) {
+      console.log('Mobile nav toggle clicked!');
+      const navbar = document.querySelector('#navbar');
+      if (navbar) {
+        navbar.classList.toggle('navbar-mobile');
+        this.classList.toggle('bi-list');
+        this.classList.toggle('bi-x');
+        console.log('Navbar classes after toggle:', navbar.className);
+        console.log('Toggle classes after toggle:', this.className);
+      }
+    });
+  }
+  
+  // 移动端导航下拉菜单
+  const dropdownLinks = document.querySelectorAll('.navbar .dropdown > a');
+  dropdownLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+      const navbar = document.querySelector('#navbar');
+      if (navbar && navbar.classList.contains('navbar-mobile')) {
+        e.preventDefault();
+        const nextElement = this.nextElementSibling;
+        if (nextElement) {
+          nextElement.classList.toggle('dropdown-active');
+        }
+      }
+    });
+  });
+  
+  // 滚动到指定位置的链接
+  const scrollLinks = document.querySelectorAll('.scrollto');
+  scrollLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+      const hash = this.hash;
+      if (hash && document.querySelector(hash)) {
+        e.preventDefault();
+        
+        const navbar = document.querySelector('#navbar');
+        if (navbar && navbar.classList.contains('navbar-mobile')) {
+          navbar.classList.remove('navbar-mobile');
+          const navbarToggle = document.querySelector('.mobile-nav-toggle');
+          if (navbarToggle) {
+            navbarToggle.classList.remove('bi-x');
+            navbarToggle.classList.add('bi-list');
+          }
+        }
+        
+        // 滚动到指定位置
+        const targetElement = document.querySelector(hash);
+        if (targetElement) {
+          const header = document.querySelector('#header');
+          const offset = header ? header.offsetHeight : 0;
+          const elementPos = targetElement.offsetTop;
+          window.scrollTo({
+            top: elementPos - offset,
+            behavior: 'smooth'
+          });
+        }
+      }
+    });
   });
 }
 
