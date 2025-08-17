@@ -176,7 +176,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   color: #fff;
   white-space: nowrap;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.3s;
 }
 .navbar a i, .navbar a:focus i {
   font-size: 12px;
@@ -185,9 +185,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
   color: #47b2e4;
-  transform: translateY(-3px);
-  text-shadow: 0 2px 4px rgba(71, 178, 228, 0.3);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .navbar .getstarted, .navbar .getstarted:focus {
   padding: 8px 20px;
@@ -226,16 +223,12 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: none;
   font-weight: 500;
   color: #0c3c53;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .navbar .dropdown ul a i {
   font-size: 12px;
 }
 .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
   color: #47b2e4;
-  transform: translateY(-2px);
-  text-shadow: 0 1px 3px rgba(71, 178, 228, 0.2);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .navbar .dropdown:hover > ul {
   opacity: 1;
@@ -272,10 +265,6 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
   line-height: 0;
   transition: 0.5s;
-  /* 添加调试样式 */
-  background: rgba(255, 0, 0, 0.1);
-  padding: 5px;
-  border-radius: 3px;
 }
 .mobile-nav-toggle.bi-x {
   color: #fff;

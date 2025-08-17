@@ -254,5 +254,29 @@
     });
   });
 
+  /**
+   * 防止页面自动向上滚动的功能
+   * 解决刷新页面时自动滚动的问题
+   */
+  const preventAutoScroll = () => {
+    // 确保页面加载后滚动到顶部
+    window.scrollTo(0, 0);
+    
+    // 防止AOS或其他脚本影响滚动位置
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 100);
+    
+    // 页面完全加载后再次确保滚动位置
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 500);
+  };
+
+  // 在DOM加载完成后执行
+  document.addEventListener('DOMContentLoaded', preventAutoScroll);
+  
+  // 在页面完全加载后再次执行
+  window.addEventListener('load', preventAutoScroll);
 
 })()
