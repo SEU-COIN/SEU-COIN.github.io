@@ -66,9 +66,9 @@ function loadHeader() {
             <li role="none"><a href="news.html" class="sidebar-link" role="menuitem" tabindex="0"><i class="bi bi-newspaper" aria-hidden="true"></i>News</a></li>
             <li role="none"><a href="members.html" class="sidebar-link" role="menuitem" tabindex="0"><i class="bi bi-people" aria-hidden="true"></i>Members</a></li>
             <li role="none"><a href="publication.html" class="sidebar-link" role="menuitem" tabindex="0"><i class="bi bi-journal-text" aria-hidden="true"></i>Publication</a></li>
-            <li role="none"><a href="project.html" class="sidebar-link" role="menuitem" tabindex="0"><i class="bi bi-briefcase" aria-hidden="true"></i>Project</a></li>
+            <li role="none"><a href="project.html" class="sidebar-link" role="menuitem" tabindex="0"><i class="bi bi-briefcase" aria-hidden="true"></i>Projects</a></li>
             <li role="none"><a href="resources.html" class="sidebar-link" role="menuitem" tabindex="0"><i class="bi bi-folder" aria-hidden="true"></i>Resources</a></li>
-            <li role="none"><a href="graduate.html" class="sidebar-link" role="menuitem" tabindex="0"><i class="bi bi-mortarboard" aria-hidden="true"></i>Graduate</a></li>
+            <li role="none"><a href="graduate.html" class="sidebar-link" role="menuitem" tabindex="0"><i class="bi bi-mortarboard" aria-hidden="true"></i>Graduates</a></li>
             <li role="none"><a href="join.html" class="sidebar-link" role="menuitem" tabindex="0"><i class="bi bi-person-plus" aria-hidden="true"></i>Join Us</a></li>
           </ul>
         </nav>
