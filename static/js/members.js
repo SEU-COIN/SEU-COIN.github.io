@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         placeholder.textContent = initials;
-        placeholder.title = `头像占位符 - ${memberName || '未知成员'}`;
+        placeholder.title = `Avatar - ${memberName || '未知成员'}`;
         container.appendChild(placeholder);
     }
 
