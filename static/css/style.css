@@ -2106,3 +2106,65 @@ html, body, .container, .container-fluid {
 
 .team .member.member--student .pic{ --avatar-size: 120px; }
 
+@media (max-width: 768px) {
+  .team .member.member--student {
+    padding: 15px;            /* 整体 padding 缩小 */
+    align-items: center;      /* 头像和文字垂直居中 */
+    max-height: 150px;
+  }
+
+  .team .member.member--student .pic {
+    --avatar-size: 90px;     /* 头像缩小 */
+  }
+
+  .team .member.member--student .member-info {
+    padding-left: 15px;       /* 减小左右间距 */
+  }
+
+  .team .member.member--student h4 {
+    font-size: 18px;          /* 标题缩小 */
+    margin-bottom: 3px;
+  }
+
+  .team .member.member--student span {
+    font-size: 13px;
+    padding-bottom: 6px;
+  }
+
+  .team .member.member--student p {
+    font-size: 13px;
+    margin: 4px 0 0 0;        /* 收紧段落间距 */
+  }
+
+  .team .member.member--student .social {
+    margin-top: 6px;          /* 社交按钮区域收紧 */
+  }
+}
+
+/* 头像占位符样式 */
+.avatar-placeholder {
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-family: "Jost", sans-serif !important;
+  font-weight: 600 !important;
+  letter-spacing: 1px !important;
+}
+
+.avatar-placeholder:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* 响应式字体大小调整 */
+@media (max-width: 768px) {
+  .avatar-placeholder {
+    font-size: 2em !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .avatar-placeholder {
+    font-size: 1.5em !important;
+  }
+}
+
