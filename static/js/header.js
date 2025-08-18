@@ -27,9 +27,9 @@ function loadHeader() {
               <li><a style="color: ${navColor}; font-weight: bold; font-size: 18px;" class="nav-link scrollto" href="news.html">News</a></li>
               <li><a style="color: ${navColor}; font-weight: bold; font-size: 18px;" class="nav-link scrollto" href="members.html">Members</a></li>
               <li><a style="color: ${navColor}; font-weight: bold; font-size: 18px;" class="nav-link scrollto" href="publication.html">Publication</a></li>
-              <li><a style="color: ${navColor}; font-weight: bold; font-size: 18px;" class="nav-link scrollto" href="projects.html">Project</a></li>
+              <li><a style="color: ${navColor}; font-weight: bold; font-size: 18px;" class="nav-link scrollto" href="project.html">Projects</a></li>
               <li><a style="color: ${navColor}; font-weight: bold; font-size: 18px;" class="nav-link scrollto" href="resources.html">Resources</a></li>
-              <li><a style="color: ${navColor}; font-weight: bold; font-size: 18px;" class="nav-link scrollto" href="graduates.html">Graduate</a></li>
+              <li><a style="color: ${navColor}; font-weight: bold; font-size: 18px;" class="nav-link scrollto" href="graduate.html">Graduates</a></li>
               <li><a style="color: ${navColor}; font-weight: bold; font-size: 18px;" class="nav-link scrollto" href="join.html">Join Us</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle ${!isIndexPage ? 'non-index' : ''}"></i>
