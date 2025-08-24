@@ -16,7 +16,7 @@ function loadHeader() {
           <h1 class="logo me-auto" style="display: flex; align-items: center;">
             <a href="index.html"
               style="font-weight: bold; font-size: 28px; display: flex; align-items: center; text-decoration: none;">
-              <img src="static/img/coin-small.png" alt="Logo" style="height: 32px; margin-right: 8px;">
+              <img src="static/img/coin-wo-cn_subtitle.svg" alt="Logo" style="height: 32px; margin-right: 8px;">
               <span style="color:#D6C62E;">CO</span><span style="color:#1D7F3C;">IN</span>
             </a>
           </h1>
@@ -50,7 +50,7 @@ function loadHeader() {
       <div class="sidebar-menu" id="sidebarMenu" aria-hidden="true" role="navigation" aria-label="Main navigation">
         <div class="sidebar-header">
           <div class="logo">
-            <img src="static/img/coin-small.png" alt="COIN Logo">
+            <img src="static/img/coin-wo-cn_subtitle.svg" alt="COIN Logo">
             <div>
               <span class="co">CO</span><span class="in">IN</span>
             </div>
