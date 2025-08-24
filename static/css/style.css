@@ -363,6 +363,7 @@ h1, h2, h3, h4, h5, h6 {
 .sidebar-header .logo span {
   font-size: 24px;
   font-weight: bold;
+  font-family: "Jost", sans-serif;
   color: #fff;
 }
 
@@ -382,6 +383,7 @@ h1, h2, h3, h4, h5, h6 {
   border: none;
   color: #fff;
   font-size: 24px;
+  font-family: "Open Sans", sans-serif;
   width: 40px;
   height: 40px;
   cursor: pointer;
@@ -419,6 +421,7 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   font-size: 16px;
   font-weight: 500;
+  font-family: "Open Sans", sans-serif;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   border-left: 3px solid transparent;
   position: relative;
@@ -506,6 +509,7 @@ h1, h2, h3, h4, h5, h6 {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   font-size: 14px;
+  font-family: "Open Sans", sans-serif;
   transition: all 0.3s;
 }
 
@@ -595,11 +599,13 @@ h1, h2, h3, h4, h5, h6 {
   
   .sidebar-header .logo span {
     font-size: 20px;
+    font-family: "Jost", sans-serif;
   }
   
   .sidebar-nav a {
     padding: 8px 20px;
     font-size: 15px;
+    font-family: "Open Sans", sans-serif;
     margin-left: 8px;
     margin-right: 8px;
   }
