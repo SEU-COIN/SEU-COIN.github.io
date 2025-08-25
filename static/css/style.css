@@ -177,15 +177,18 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   color: #fff;
   white-space: nowrap;
-  transition: 0.3s;
+  transition: 0.3s ease;
+  transform: translateY(0);
 }
 .navbar a i, .navbar a:focus i {
   font-size: 12px;
   line-height: 0;
   margin-left: 5px;
 }
-.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a,
+.navbar .nav-link:hover, .navbar .nav-link.active {
   color: #47b2e4;
+  transform: translateY(-2px);
 }
 .navbar .getstarted, .navbar .getstarted:focus {
   padding: 8px 20px;
@@ -301,6 +304,12 @@ h1, h2, h3, h4, h5, h6 {
 
   .navbar ul {
     display: none;
+  }
+  
+  /* 在移动端禁用上跳动画 */
+  .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a,
+  .navbar .nav-link:hover, .navbar .nav-link.active {
+    transform: none;
   }
 }
 
