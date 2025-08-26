@@ -87,9 +87,9 @@ const MEMBERS_DATA = {
     {
       name: "张裕欣",
       englishName: "Yuxin Zhang",
-      email: "",
-      github: "",
-      link: ""
+      email: "zzyx_cs@seu.edu.cn",
+      github: "https://github.com/YuxinZhangGit",
+      link: "https://scholar.google.com.hk/citations?user=UZHnxToAAAAJ"
     },
     {
       name: "李嘉琦",
