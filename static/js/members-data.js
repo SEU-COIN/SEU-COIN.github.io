@@ -289,8 +289,8 @@ const MEMBERS_DATA = {
       {
         name: "沈若妍",
         englishName: "Ruoyan Shen",
-        email: "220242389@seu.edu.cn",
-        github: "",
+        email: "shenruoyan@seu.edu.cn",
+        github: "https://github.com/flippedyyyou",
         link: ""
       },
       {
@@ -496,7 +496,7 @@ const MEMBERS_DATA = {
       {
         name: "吴飞跃",
         englishName: "Feiyue Wu",
-        email: "",
+        email: "ark2000@foxmail.com",
         github: "",
         link: ""
       },
