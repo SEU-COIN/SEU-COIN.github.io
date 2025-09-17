@@ -46,9 +46,8 @@ class GraduateCardGenerator {
         <div class="row g-4">
           ${graduates.map(graduate => {
             const destinationHtml = graduate.destination ? `<p><strong>Destination: </strong>${graduate.destination}</p>` : '';
-            const emailIconHtml = graduate.email 
-              ? `<p><a href="mailto:${graduate.email}" title="${graduate.email}" aria-label="Email ${graduate.name} ${graduate.englishName || ''}"><i class="bi bi-envelope-fill"></i></a></p>`
-              : '';
+            const emailHtml = graduate.email ? `<p><strong> E-mail: </strong><br>${graduate.email}</p>` : '';
+            const githubHtml = graduate.github ? `<p><strong> GitHub: </strong><br><a href="${graduate.github}">${graduate.github}</a></p>` : '';
             const nameHtml = graduate.link
               ? `<a href="${graduate.link}" target="_blank">${graduate.name} ${graduate.englishName || ''} <i class="bi bi-link-45deg"></i></a>`
               : `${graduate.name} ${graduate.englishName || ''}`;
@@ -64,7 +63,8 @@ class GraduateCardGenerator {
                     <span></span>
                     <p><strong>${graduate.degree}</strong></p>
                     ${destinationHtml}
-                    ${emailIconHtml}
+                    ${emailHtml}
+                    ${githubHtml}
                   </div>
                 </div>
               </div>
