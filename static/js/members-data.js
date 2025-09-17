@@ -181,6 +181,13 @@ const MEMBERS_DATA = {
       email: "peifengzhang@seu.edu.cn",
       github: "",
       link: ""
+    },
+    {
+      name: "杨植景",
+      englishName: "Zhijing Yang",
+      email: "",
+      github: "",
+      link: ""
     }
   ],
   
@@ -260,6 +267,48 @@ const MEMBERS_DATA = {
         name: "魏熙润",
         englishName: "Xirun Wei",
         email: "",
+        github: "",
+        link: ""
+      },
+      {
+        name: "郭德昊",
+        englishName: "Guo Dehao",
+        email: "220252235@seu.edu.cn",
+        github: "https://github.com/versev999",
+        link: ""
+      },
+      {
+        name: "侯书鸣",
+        englishName: "Shuming Hou",
+        email: "smhou0409@gmail.com",
+        github: "https://github.com/kotoriinsky",
+        link: ""
+      },
+      {
+        name: "倪奕",
+        englishName: "Yi Ni",
+        email: "",
+        github: "",
+        link: ""
+      },
+      {
+        name: "王毅豪",
+        englishName: "Yihao Wang",
+        email: "220252370@seu.edu.cn",
+        github: "",
+        link: ""
+      },
+      {
+        name: "杜文杰",
+        englishName: "Wenjie Du",
+        email: "wenjiedu0728@gmail.com",
+        github: "https://github.com/Kudonew/final",
+        link: "https://kudonew.github.io/resume/"
+      },
+      {
+        name: "岳知言",
+        englishName: "Zhiyan Yue",
+        email: "17685898260@163.com",
         github: "",
         link: ""
       }
