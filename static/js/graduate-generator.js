@@ -46,6 +46,12 @@ class GraduateCardGenerator {
         <div class="row g-4">
           ${graduates.map(graduate => {
             const destinationHtml = graduate.destination ? `<p><strong>Destination: </strong>${graduate.destination}</p>` : '';
+            const emailIconHtml = graduate.email 
+              ? `<p><a href="mailto:${graduate.email}" title="${graduate.email}" aria-label="Email ${graduate.name} ${graduate.englishName || ''}"><i class="bi bi-envelope-fill"></i></a></p>`
+              : '';
+            const nameHtml = graduate.link
+              ? `<a href="${graduate.link}" target="_blank">${graduate.name} ${graduate.englishName || ''} <i class="bi bi-link-45deg"></i></a>`
+              : `${graduate.name} ${graduate.englishName || ''}`;
 
             return `
               <div class="col-lg-4 col-md-6 col-sm-12">
@@ -54,10 +60,11 @@ class GraduateCardGenerator {
                     <img src="${graduate.image}" class="img-fluid" alt="" loading="lazy">
                   </div>
                   <div class="member-info">
-                    <h4>${graduate.name} ${graduate.englishName}</h4>
+                    <h4>${nameHtml}</h4>
                     <span></span>
                     <p><strong>${graduate.degree}</strong></p>
                     ${destinationHtml}
+                    ${emailIconHtml}
                   </div>
                 </div>
               </div>
