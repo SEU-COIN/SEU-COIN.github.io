@@ -188,6 +188,20 @@ const MEMBERS_DATA = {
       email: "",
       github: "",
       link: ""
+    },
+    {
+      name: "吴宸宸",
+      englishName: "Chenchen Wu",
+      email: "",
+      github: "",
+      link: ""
+    },
+    {
+      name: "张福正",
+      englishName: "Fuzheng Zhang",
+      email: "fzzhang1128@seu.edu.cn",
+      github: "https://github.com/Edrex1128",
+      link: ""
     }
   ],
   
@@ -205,7 +219,7 @@ const MEMBERS_DATA = {
         englishName: "Linbo Fu",
         email: "220252246@seu.edu.cn",
         github: "https://github.com/FrankPotter",
-        link: ""
+        link: "https://scholar.google.com/citations?user=Dzg1lJAAAAAJ"
       },
       {
         name: "欧阳腾",
@@ -311,7 +325,14 @@ const MEMBERS_DATA = {
         email: "17685898260@163.com",
         github: "",
         link: ""
-      }
+      },
+      {
+        name: "邹堉莹",
+        englishName: "Yuying Zou",
+        email: "yuying.zou@seu.edu.cn",
+        github: "",
+        link: ""
+      },
     ],
     "2024": [
       {
@@ -402,7 +423,7 @@ const MEMBERS_DATA = {
         name: "薛浩涵",
         englishName: "Haohan Xue",
         email: "thex1ay@seu.edu.cn",
-        github: "",
+        github: "https://github.com/TheX1ay",
         link: ""
       },
       {
