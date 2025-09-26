@@ -286,7 +286,7 @@ const MEMBERS_DATA = {
       },
       {
         name: "郭德昊",
-        englishName: "Guo Dehao",
+        englishName: "Dehao Guo",
         email: "220252235@seu.edu.cn",
         github: "https://github.com/versev999",
         link: ""
