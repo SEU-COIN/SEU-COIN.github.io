@@ -38,8 +38,8 @@ class MemberCardGenerator {
                 </a>
               </h4>
               <span style="font-weight: bold;">${member.title}</span>
-              <p><strong> E-mail: </strong><br> ${member.email}</p>
-              <p><strong> 研究方向: </strong><br> ${member.research}</p>
+              <p><strong> E-mail </strong><br> ${member.email}</p>
+              <p><strong> Research Interests </strong><br> ${member.research}</p>
             </div>
           </div>
         </div>
@@ -64,8 +64,8 @@ class MemberCardGenerator {
         ? `<a href="${member.link}" target="_blank">${member.name} ${member.englishName} <i class="bi bi-link-45deg"></i></a>`
         : `${member.name} ${member.englishName}`;
       
-      const emailHtml = member.email ? `<p><strong> E-mail: </strong><br>${member.email}</p>` : '';
-      const githubHtml = member.github ? `<p><strong> GitHub: </strong><br><a href="${member.github}">${member.github}</a></p>` : '';
+      const emailHtml = member.email ? `<p><strong> E-mail </strong><br>${member.email}</p>` : '';
+      const githubHtml = member.github ? `<p><strong> GitHub </strong><br><a href="${member.github}">${member.github}</a></p>` : '';
 
       return `
         <div class="col-lg-4 col-md-6 col-sm-12">

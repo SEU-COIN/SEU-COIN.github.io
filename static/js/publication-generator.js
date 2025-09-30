@@ -77,11 +77,11 @@ class PublicationCardGenerator {
             <strong>Authors</strong>: ${publication.authors}
           </p>
           <p>
-            <strong>Conference/Journal Name</strong>: ${publication.venue}
+            <strong>Conference/Journal</strong>: ${publication.venue}
           </p>
           <p>
             ${publication.level && publication.level.trim() !== '' ? 
-              `<strong>Paper Level</strong>: ${publication.level}` : 
+              `<strong>Level</strong>: ${publication.level}` : 
               ''
             }
           </p>
