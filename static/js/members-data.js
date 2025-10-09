@@ -122,7 +122,7 @@ const MEMBERS_DATA = {
     {
       name: "翟松林",
       englishName: "Songlin Zhai",
-      email: "songlin_zhai@seu.edu.cn",
+      email: "songlin.zhai@gmail.com",
       github: "https://github.com/SonglinZhai",
       link: ""
     },
@@ -245,7 +245,7 @@ const MEMBERS_DATA = {
       {
         name: "马阳阳",
         englishName: "Yangyang Ma",
-        email: "3032307743@qq.com",
+        email: "220252382@seu.edu.cn",
         github: "",
         link: ""
       },
