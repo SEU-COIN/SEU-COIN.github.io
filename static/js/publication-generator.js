@@ -40,8 +40,13 @@ class PublicationCardGenerator {
 
   // 生成年份部分
   generateYearSection(year, publications) {
-    // 反转数组，使最新的出版物在最上面
-    const reversedPublications = [...publications].reverse();
+    // 按ID降序排列，使ID最大的出版物在最上面
+    const sortedPublications = [...publications].sort((a, b) => {
+      // 提取ID中的数字部分进行比较
+      const aNum = parseInt(a.id.split('-')[1]);
+      const bNum = parseInt(b.id.split('-')[1]);
+      return bNum - aNum;
+    });
     const totalCount = publications.length;
     
     return `
@@ -52,7 +57,7 @@ class PublicationCardGenerator {
           </div>
           <div class="accordion-list">
             <ul>
-              ${reversedPublications.map((publication, index) => this.generatePublicationItem(publication, index + 1, totalCount)).join('')}
+              ${sortedPublications.map((publication, index) => this.generatePublicationItem(publication, index + 1, totalCount)).join('')}
             </ul>
           </div>
         </div>

@@ -32,7 +32,8 @@
   <style>
     /* 添加样式以增加header和main之间的距离 */
     #main {
-      padding-top: 60px; /* 你可以根据需要调整这个值 */
+      padding-top: 60px;
+      /* 你可以根据需要调整这个值 */
     }
     
     /* 移除折叠功能但保持原始外观 */
@@ -54,11 +55,7 @@
       visibility: visible !important;
     }
     
-    /* 减少年份之间的间距 - 更紧凑 */
-    .why-us {
-      padding: 5px 0 !important;
-    }
-    
+    /* 减少年份之间的间距 - 更紧凑，但不影响section-title */
     .why-us .row {
       margin-bottom: 5px !important;
     }
@@ -93,13 +90,12 @@
   <div id="header-container"></div><!-- Header will be loaded here -->
 
   <main id="main">
-        <!-- ======= Team Section ======= -->
-        <section id="why-us" class="why-us section-bg">
-          <div class="container-fluid" data-aos="fade-up">
-            <div class="section-title">
-              <h2>Publication</h2>
-              <p></p>
-            </div>
+    <!-- ======= Publication Section ======= -->
+    <section id="why-us" class="why-us section-bg">
+      <div class="container-fluid" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Publication</h2>
+        </div>
     
             <!-- 出版物内容将通过JavaScript动态生成 -->
 
@@ -112,8 +108,8 @@
 
 
 
-          </div>
-        </section><!-- End Why Us Section -->
+      </div>
+    </section><!-- End Publication Section -->
         
       </main><!-- End #main -->
 
