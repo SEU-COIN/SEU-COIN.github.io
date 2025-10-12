@@ -56,8 +56,17 @@
     }
     
     /* 减少年份之间的间距 - 更紧凑，但不影响section-title */
+    .why-us .container-fluid {
+      padding-top: 20px !important;
+    }
+    
     .why-us .row {
       margin-bottom: 5px !important;
+      margin-top: 5px !important;
+    }
+    
+    .why-us .row:first-of-type {
+      margin-top: 0px !important;
     }
     
     .why-us .row:last-child {
@@ -68,6 +77,16 @@
     .why-us .content h3 {
       margin-bottom: 5px !important;
       margin-top: 5px !important;
+    }
+    
+    /* 减少section-title的底部间距 */
+    .why-us .section-title {
+      margin-bottom: 10px !important;
+    }
+    
+    /* 覆盖主CSS文件中的padding设置 */
+    .why-us .content {
+      padding: 10px 100px 0 100px !important;
     }
     
     /* 减少accordion-list的间距 */
