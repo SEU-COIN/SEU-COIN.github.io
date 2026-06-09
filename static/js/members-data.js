@@ -6,7 +6,7 @@ const MEMBERS_DATA = {
       englishName: "Guilin Qi",
       title: "Full Professor",
       email: "gqi@seu.edu.cn",
-      research: "人工智能，知识工程，知识图谱，自然语言处理，机器学习",
+      research: "大语言模型，知识图谱，自然语言处理，知识表示与推理",
       image: "static/img/team/漆桂林.webp",
       link: "https://cs.seu.edu.cn/gqi/main.htm"
     },
